@@ -1,59 +1,47 @@
-# Vendas
+# 📌 Vendas.Frontend — README
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.13.
+## 🛠️ Status:
+🚧 Em andamento 🚧
 
-## Development server
+## 🧩 Sobre o projeto
 
-To start a local development server, run:
+O Vendas.Frontend faz parte de uma prova de conceito (POC) construída para estudar micro‑frontends utilizando Module Federation.
+Este projeto funciona como um dos módulos independentes que se integram dinamicamente à aplicação principal, expondo componentes e consumindo recursos compartilhados.
 
-```bash
-ng serve
-```
+O cerne deste estudo reside na implementação de uma arquitetura de Microfrontends robusta e modular. O principal objetivo é estabelecer o Vendas.Frontend como a aplicação Host (contêiner), com a capacidade de integrar e consumir componentes de forma dinâmica e desacoplada a partir de dois outros projetos, que atuarão como Remotes.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Os projetos constituintes desta arquitetura são:
 
-## Code scaffolding
+Vendas.Frontend: Atua como o Host principal, orquestrando a experiência do usuário e consumindo funcionalidades dos demais.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+[Produtos.Frontend](https://github.com/Angelowh/Produto.Frontend): Um Remote que expõe componentes relacionados à gestão de produtos.
 
-```bash
-ng generate component component-name
-```
+[Grafico.Frontend](https://github.com/Angelowh/Grafico.Frontend): Um Remote que disponibiliza componentes visuais (gráficos) para análise e exibição de dados.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🎯 Objetivo do estudo
 
-```bash
-ng generate --help
-```
+- Demonstrar como micro‑frontends podem ser separados por domínio;
 
-## Building
+- Permitir deploy, versionamento e desenvolvimento independentes;
 
-To build the project run:
+- Aprender Module Federation na prática usando projetos reais;
 
-```bash
-ng build
-```
+## 🏗️ Tecnologias usadas
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Angular
 
-## Running unit tests
+- Module Federation
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- TypeScript
+
+- CSS
+
+## ▶️ Como executar
 
 ```bash
-ng test
+npm install
+npm run start
 ```
 
-## Running end-to-end tests
+## 🖼️ Prints da aplicação
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
